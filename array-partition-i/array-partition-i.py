@@ -1,9 +1,9 @@
 class Solution:
     def arrayPairSum(self, nums: List[int]) -> int:
         nums.sort()
-        min_list=[]
+        max_sum = 0
         for i in range(0,len(nums),2):
             min_val = min(nums[i],nums[i+1])
-            min_list.append(min_val)
+            max_sum += min_val
         
-        return sum(min_list)
+        return max_sum
