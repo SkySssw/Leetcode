@@ -8,8 +8,7 @@ class Solution:
                 common_dict[word] = sum_ind
                 if sum_ind < min_sum:
                     min_sum = sum_ind
-        print(common_dict)
-        print(min_sum)
+
         return [word for word in common_dict if common_dict[word] == min_sum ]
         
             
